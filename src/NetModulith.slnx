@@ -1,0 +1,30 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Api/">
+    <Project Path="Api/NetModulith.Api.csproj" />
+  </Folder>
+  <Folder Name="/BoundedContexts/" />
+  <Folder Name="/BoundedContexts/Basket/">
+    <Project Path="BoundedContexts/Basket/NetModulith.Basket.csproj" />
+  </Folder>
+  <Folder Name="/BoundedContexts/Catalog/">
+    <Project Path="BoundedContexts/Catalog/NetModulith.Catalog.csproj" />
+  </Folder>
+  <Folder Name="/BoundedContexts/Ordering/">
+    <Project Path="BoundedContexts/Ordering/NetModulith.Ordering.csproj" />
+  </Folder>
+  <Folder Name="/SharedKernel/" />
+  <Folder Name="/SharedKernel/Contracts/">
+    <Project Path="SharedKernel/Contracts/NetModulith.SharedKernel.Contracts.csproj" />
+  </Folder>
+  <Folder Name="/SharedKernel/Messaging/">
+    <Project Path="SharedKernel/Messaging/NetModulith.SharedKernel.Messaging.csproj" />
+  </Folder>
+  <Folder Name="/SharedKernel/Shared/">
+    <Project Path="SharedKernel/Shared/NetModulith.SharedKernel.Shared.csproj" />
+  </Folder>
+</Solution>
