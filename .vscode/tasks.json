@@ -1,0 +1,107 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build WebApi",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/src/WebApi/WebApi.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "clean solution",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "clean",
+                "${workspaceFolder}/NetModulith.slnx"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build solution",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/NetModulith.slnx",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "restore solution",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "restore",
+                "${workspaceFolder}/NetModulith.slnx"
+            ],
+        },
+        {
+            "label": "dotnet-format: Solution",
+            "command": "dotnet",
+            "args": [
+                "format",
+                "${workspaceFolder}/NetModulith.slnx",
+            ],
+            "type": "process",
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "dotnet-format: Analyzers (Info)",
+            "command": "dotnet",
+            "args": [
+                "format",
+                "analyzers",
+                "--severity",
+                "info",
+                "--verbosity",
+                "diagnostic"
+            ],
+            "type": "process",
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch WebApi",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/src/WebApi/WebApi.csproj",
+                "--urls",
+                "http://localhost:5000"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "run WebApi",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "run",
+                "--project",
+                "${workspaceFolder}/src/WebApi/WebApi.csproj",
+                "--urls",
+                "http://localhost:5000"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

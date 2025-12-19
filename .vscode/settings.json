@@ -1,0 +1,42 @@
+{
+    "dotnet.defaultSolution": "NetModulith.slnx",
+    "editor.formatOnSave": true,
+    "files.exclude": {
+        ".editorconfig": true,
+        ".gitignore": true,
+        "global.json": true,
+        ".devcontainer": true
+    },
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleReferences": "peek",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.wordBasedSuggestions": "matchingDocuments",
+    "editor.parameterHints.enabled": true,
+    "editor.hover.enabled": "on",
+    "editor.definitionLinkOpensInPeek": false,
+    "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
+    "dotnet.inlayHints.enableInlayHintsForParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForLiteralParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForObjectCreationParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForIndexerParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForOtherParameters": true,
+    "dotnet.inlayHints.suppressInlayHintsForParametersThatDifferOnlyBySuffix": true,
+    "dotnet.inlayHints.suppressInlayHintsForParametersThatMatchMethodIntent": true,
+    "dotnet.inlayHints.suppressInlayHintsForParametersThatMatchArgumentName": true,
+    "omnisharp.enableEditorConfigSupport": true,
+    "omnisharp.useModernNet": true,
+    "editor.codeLens": true,
+    "editor.showFoldingControls": "always",
+    "editor.foldingStrategy": "indentation",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "dotnet.formatting.organizeImportsOnFormat": true
+}
