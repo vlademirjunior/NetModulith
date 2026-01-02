@@ -1,5 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Host.UseWolverine();
+
 // Add services to the container.
 builder.Services.AddCatalogContext(builder.Configuration)
     .AddBasketContext(builder.Configuration)
