@@ -11,4 +11,10 @@
     <PackageReference Include="FastEndpoints.Swagger" Version="7.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BoundedContexts\Basket\Basket.csproj" />
+    <ProjectReference Include="..\BoundedContexts\Catalog\Catalog.csproj" />
+    <ProjectReference Include="..\BoundedContexts\Ordering\Ordering.csproj" />
+  </ItemGroup>
+
 </Project>
